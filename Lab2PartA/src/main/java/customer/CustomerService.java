@@ -1,29 +1,14 @@
-package customers;
+package customer;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
-@Service
+@Component
 public class CustomerService implements ICustomerService {
-//	ICustomerDAO customerDAO = new CustomerDAO();
-//	IEmailSender emailSender = new EmailSender();
+@Autowired
 	private ICustomerDAO customerDAO;
+@Autowired
 	private IEmailSender emailSender;
-
-
-	/* constructor injection for customerDAO and emailSender
-	 to use constructor injection, comment out the two lines in the spring config file
-	 and uncomment the following constructor
-	 */
-//	public CustomerService(ICustomerDAO customerDAO, IEmailSender emailSender) {
-//		super();
-//
-//		ICustomerDAO customerDAO2 = new CustomerDAO();
-//		IEmailSender emailSender2 = new EmailSender();
-//		this.customerDAO = customerDAO2;
-//		this.emailSender = emailSender2;
-//	}
-
 
 	 //setter injection for customerDAO
 	public void setCustomerDAO(ICustomerDAO customerDAO) {
