@@ -2,26 +2,37 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Lab2PartA" />
+        <module name="CustomerApplication" />
+        <module name="Exercise1 (1)" />
+        <module name="Lesson3SpringBootJDBCCustomerWithCreditCard" />
+        <module name="Exercise1 (2)" />
         <module name="Exercise1 (3)" />
         <module name="Exercise1 (4)" />
-        <module name="Lab2PartA" />
-        <module name="Exercise1 (1)" />
         <module name="Exercise7" />
-        <module name="Exercise1 (2)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="eRegistrar" target="17" />
       <module name="Exercise1" target="17" />
+      <module name="Exercise9" target="11" />
+      <module name="SpringBootJDBC" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CustomerApplication" options="-parameters" />
       <module name="Exercise7" options="-parameters" />
+      <module name="Exercise9" options="-parameters" />
       <module name="Lab2PartA" options="-parameters" />
+      <module name="Lesson3SpringBootJDBCCustomerWithCreditCard" options="-parameters" />
+      <module name="SpringBootJDBC" options="-parameters" />
+      <module name="eRegistrar" options="-parameters" />
     </option>
   </component>
 </project>

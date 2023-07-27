@@ -1,5 +1,6 @@
 package customers;
 
+
 public class CustomerDAO implements ICustomerDAO{
 	private ILogger logger = new Logger();
 
